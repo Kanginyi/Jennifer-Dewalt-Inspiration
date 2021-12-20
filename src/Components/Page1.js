@@ -30,33 +30,33 @@ function Page1() {
                     <div className="cat">
                         <div className="face">
                             <div className="left-ear">
-                            <div className="left-inner"></div>
+                                <div className="left-inner"></div>
                             </div>
                             <div className="right-ear">
-                            <div className="right-inner"></div>
+                                <div className="right-inner"></div>
                             </div>
                             <div className="left-eye">
-                            <div className="eyeball"></div>
-                            <div className="sparkle"></div>
+                                <div className="eyeball"></div>
+                                <div className="sparkle"></div>
                             </div>
                             <div className="right-eye">
-                            <div className="eyeball"></div>
-                            <div className="sparkle"></div>
+                                <div className="eyeball"></div>
+                                <div className="sparkle"></div>
                             </div>
                             <div className="nose">
-                            <div className="left-mouth"></div>
-                            <div className="right-mouth"></div>
+                                <div className="left-mouth"></div>
+                                <div className="right-mouth"></div>
                             </div>
                         </div>
                 
                         <div className="body">
-                        <div className="left-paw"></div>
-                            <div className="left-poly"></div>
-                        <div className="right-paw"></div>
-                            <div className="right-poly"></div>
-                        <div className="back-left-paw"></div>
-                        <div className="back-right-paw"></div>
-                        <div className="tail"></div>
+                            <div className="left-paw"></div>
+                                <div className="left-poly"></div>
+                            <div className="right-paw"></div>
+                                <div className="right-poly"></div>
+                            <div className="back-left-paw"></div>
+                            <div className="back-right-paw"></div>
+                            <div className="tail"></div>
                         </div>
                 
                         <div className="shadow"></div>
