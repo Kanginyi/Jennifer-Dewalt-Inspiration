@@ -6,17 +6,41 @@ import "./App.css"
 // Import "Pages"
 import Page1 from "./Components/Page1";
 
+// Import Images
+import homepage_pic from "./Images/home.png";
+import henri_pic from "./Images/henri.jpg";
+
 function App() {
   
     // If index === 0, render Homepage and make sure that it doesn't render anythingelse, just bings into homepage
     // Anything else, increment by 1 and then go from there
 
+    const pageNames = [
+        {name: "Homepage", image: homepage_pic},
+        {name: "Henri", image: henri_pic}
+    ];
+
+
     const Row = ({ index, style }) => (
         // <div style={style}> Row {index}</div>
-        <a style={style} href={`/page${index}`}>Page {index}</a>
-    );
+        // <div className="homepage-link">
+        <>
+            <a
+                href={index === 0 ? "/" : `page${index}`}
+                style={style}
+                className="homepage-link"
+            >
+                <img
+                src={pageNames[index]?.image}
+                alt={`${pageNames[index]?.name} page image`}
+                className="homepage-link-image"
+                />
 
-    console.log(Row);
+                {index === 0 ? "Homepage" : `Page ${index}`}{index === 0 ? null : `: ${pageNames[index]?.name}`}
+            </a>
+        </>
+        // </div>
+    );
 
 	return (
 		<Router>
@@ -25,16 +49,16 @@ function App() {
 				<Route path="/" element={
 					<div id="homepage">
 						<h1>Hello World!</h1>
-						<p>My name is Eric and I'm trying to learn more about web development. Welcome to a website inspired by <a href="https://jenniferdewalt.com/" target="_blank">Jennifer Dewalt's</a> 180 Websites in 180 Days project.</p>
-						<a href="/page1">Page 1</a><br/>
-						<a href="/">Homepage</a>
+						<p>My name is Eric and I'm trying to learn more about web development. Welcome to a website inspired by Jennifer Dewalt's <a href="https://jenniferdewalt.com/" target="_blank">180 Websites in 180 Days project</a>.</p>
+                        <br/><br/>
 
                         <div id="homepage-list">
                             <List
                                 itemCount={100}
-                                itemSize={35}
-                                height={250}
+                                itemSize={100}
+                                height={400}
                                 width={450}
+                                
                             >
                                 {Row}
                             </List>
