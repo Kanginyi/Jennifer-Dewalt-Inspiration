@@ -12,6 +12,8 @@
     padding-top: 2.5rem;
 
     z-index: -100;
+
+    overflow: hidden;
 }
 
 #page1 ::selection {
@@ -65,6 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(2.5);
 }
 
 /* Henri Divs Image */
@@ -87,7 +90,7 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: relative;
-    /* z-index: -1; */
+    z-index: -1;
 }
 
 .left-ear {
@@ -206,11 +209,11 @@
 }
 
 .left-paw {
-    top: 100px;
+    top: 99px;
 }
 
 .right-paw {
-    top: 83px;
+    top: 82px;
     left: 30px;
 }
 
@@ -223,25 +226,25 @@
 }
 
 .left-poly {
-    top: 95px;
+    top: 94px;
     left: 14px;
     transform: rotate(40deg);
     border-radius: 50%;
 }
 
 .right-poly {
-    top: 78px;
+    top: 77px;
     left: 31px;
     transform: rotate(-40deg);
 }
 
 .back-left-paw {
-    top: 66px;
+    top: 65px;
     left: 60px;
 }
 
 .back-right-paw {
-    top: 56px;
+    top: 55px;
     left: 88px;
 }
 
