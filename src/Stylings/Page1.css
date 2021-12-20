@@ -11,12 +11,11 @@
     padding-left: 5rem;
     padding-top: 2.5rem;
 
-    z-index: -100;
-
     /* overflow: hidden; */
     overflow-x: hidden;
 }
 
+/* Figure out why selection isn't working on page */
 #page1 ::selection {
     background-color: green;
     color: white;
