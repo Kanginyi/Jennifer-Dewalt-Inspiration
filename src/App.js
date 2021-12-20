@@ -5,16 +5,19 @@ import "./App.css"
 
 // Import "Pages"
 import Page1 from "./Components/Page1";
+import Page2 from "./Components/Page2";
 
 // Import Images
 import homepage_pic from "./Images/home.png";
 import henri_pic from "./Images/henri.jpg";
+import flexbox_pic from "./Images/flexbox.jpg"
 
 function App() {
     // Array holding the information about the rendered react-window elements
     const pageNames = [
         {name: "Homepage", image: homepage_pic},
-        {name: "Henri", image: henri_pic}
+        {name: "Henri", image: henri_pic},
+        {name: "Flexbox", image: flexbox_pic}
     ];
 
 
@@ -39,6 +42,7 @@ function App() {
 	return (
 		<Router>
 			<Routes>
+                <Route path="/page2" element={<Page2/>}/>
 				<Route path="/page1" element={<Page1/>}/>
 				<Route path="/" element={
 					<div id="homepage">
@@ -52,7 +56,6 @@ function App() {
                                 itemSize={100}
                                 height={400}
                                 width={450}
-                                
                             >
                                 {Row}
                             </List>
