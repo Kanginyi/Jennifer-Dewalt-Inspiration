@@ -13,7 +13,8 @@
 
     z-index: -100;
 
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 #page1 ::selection {
