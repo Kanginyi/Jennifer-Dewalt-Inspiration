@@ -11,10 +11,7 @@ import homepage_pic from "./Images/home.png";
 import henri_pic from "./Images/henri.jpg";
 
 function App() {
-  
-    // If index === 0, render Homepage and make sure that it doesn't render anythingelse, just bings into homepage
-    // Anything else, increment by 1 and then go from there
-
+    // Array holding the information about the rendered react-window elements
     const pageNames = [
         {name: "Homepage", image: homepage_pic},
         {name: "Henri", image: henri_pic}
@@ -22,8 +19,6 @@ function App() {
 
 
     const Row = ({ index, style }) => (
-        // <div style={style}> Row {index}</div>
-        // <div className="homepage-link">
         <>
             <a
                 href={index === 0 ? "/" : `page${index}`}
@@ -39,7 +34,6 @@ function App() {
                 {index === 0 ? "Homepage" : `Page ${index}`}{index === 0 ? null : `: ${pageNames[index]?.name}`}
             </a>
         </>
-        // </div>
     );
 
 	return (
