@@ -1,0 +1,267 @@
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background: #a8dadc;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+
+    padding-left: 5rem;
+    padding-top: 2.5rem;
+
+    z-index: -100;
+}
+
+#page1 ::selection {
+    background-color: green;
+    color: white;
+}
+
+#henri-header {
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 0.5rem;
+    border-bottom: 0.35rem solid #245497;
+    /* width: 16.5%; */
+    width: 300px;
+
+    margin-bottom: 2rem;
+}
+
+#henri-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#henri-header img:hover  {
+    transform: scale(1.75);
+}
+
+#henri-header h1 {
+    font-size: 4.5rem;
+    color: #245497;
+}
+
+#henri-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#henri-description {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#henri-divs-image {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Henri Divs Image */
+.cat {
+    position: relative;
+}
+
+.face {
+    background-color: #5a5a5f;
+    height: 90px;
+    width: 110px;
+    border-radius: 30px;
+}
+
+
+.left-ear, .right-ear {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #5a5a5f;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.left-ear {
+    bottom: 35px;
+    right: 10px;
+    transform: rotate(-30deg);
+}
+
+.right-ear {
+    bottom: 85px;
+    left: 80px;
+    transform: rotate(30deg);
+}
+
+.left-inner {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #b68079;
+    border-left: 25px solid transparent;
+    right: 25px;
+    position: relative;
+}
+
+.right-inner {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #b68079;
+    border-right: 25px solid transparent;
+    position: relative;
+}
+
+.left-eye, .right-eye {
+    background-color: #a2c73d;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.left-eye {
+    bottom: 75px;
+    left: 15px;
+}
+
+.right-eye {
+    bottom: 100px;
+    left: 70px;
+}
+
+.eyeball {
+    background-color: #3a332b;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.sparkle {
+    background-color: #FFF;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 12px;
+    left: 3.25px;
+}
+
+.nose {
+    height: 0;
+    width: 0;
+    border-top: 8px solid #1f1f1f;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: relative;
+    bottom: 95px;
+    left: 50px;
+}
+
+.left-mouth, .right-mouth {
+    background-color: #1f1f1f;
+    height: 8px;
+    width: 1px;
+    position: relative;
+}
+
+.left-mouth {
+    transform: rotate(45deg);
+    right: 3.3px;
+    bottom: 2px;
+}
+
+.right-mouth {
+    transform: rotate(-45deg);
+    bottom: 10px;
+    left: 2.4px;
+}
+
+.body {
+    background-color: #5a5a5f;
+    height: 100px;
+    width: 110px;
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+    border-radius: 0px 65px 0px 0px;
+}
+
+.left-paw, .right-paw, .back-left-paw, .back-right-paw {
+    background-color: #5a5a5f;
+    height: 10px;
+    width: 22px;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.left-paw {
+    top: 100px;
+}
+
+.right-paw {
+    top: 83px;
+    left: 30px;
+}
+
+.left-poly, .right-poly {
+    background-color: #5a5a5f;
+    height: 7px;
+    width: 7px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.left-poly {
+    top: 95px;
+    left: 14px;
+    transform: rotate(40deg);
+    border-radius: 50%;
+}
+
+.right-poly {
+    top: 78px;
+    left: 31px;
+    transform: rotate(-40deg);
+}
+
+.back-left-paw {
+    top: 66px;
+    left: 60px;
+}
+
+.back-right-paw {
+    top: 56px;
+    left: 88px;
+}
+
+.tail {
+    background-color: #5a5a5f;
+    width: 100px;
+    height: 17px;
+    position: relative;
+    top: 29px;
+    left: 100px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.shadow {
+    background-color: rgba(5, 5, 5, 0.06);
+    height: 25px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 7px;
+    left: 9px;
+    z-index: -1;
+}
