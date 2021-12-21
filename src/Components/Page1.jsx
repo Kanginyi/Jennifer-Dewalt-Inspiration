@@ -10,7 +10,7 @@ function Page1() {
                     src={henri_profpic}
                     alt="Henri the cat"
                     id="henri-profile-pic"
-                />&nbsp;&nbsp;&nbsp;
+                />
                 <h1>Henri</h1>
             </header>
             
