@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    flex-direction: column;
+    height: 70vh;
 }
 
 /* Think about this and make it better; think about spacing between the react-window list and the scrollbar itself */
@@ -53,4 +54,28 @@
     width: 50px;
     position: absolute;
     right: 325px;
+}
+
+#homepage-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .85rem;
+    text-decoration: none;
+
+    border: .65rem double black;
+    border-radius: 35px;
+    background: black;
+    color: white;
+}
+
+#homepage-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+#homepage-button:active {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(.98);
 }
