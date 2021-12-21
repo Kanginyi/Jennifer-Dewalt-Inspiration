@@ -17,9 +17,8 @@ function App() {
     const pageNames = [
         {name: "Homepage", image: homepage_pic},
         {name: "Henri", image: henri_pic},
-        {name: "Flexbox", image: flexbox_pic}
+        {name: "Flexbox", image: flexbox_pic},
     ];
-
 
     const Row = ({ index, style }) => (
         <>
@@ -59,7 +58,15 @@ function App() {
                             >
                                 {Row}
                             </List>
+                            <br/><br/>
+                            <a
+                                id="homepage-button"
+                                href={`/page${Math.floor(Math.random() *  (pageNames.length - 1) + 1)}`}
+                            >
+                                Random Page
+                            </a>
                         </div>
+                                                
 					</div>
 				}/>
 			</Routes>
