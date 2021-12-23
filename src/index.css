@@ -23,3 +23,9 @@ code {
     background-color: black;
     color: white;
 }
+
+.code-block {
+    background-color: rgb(185, 185, 185);
+    padding: .75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
