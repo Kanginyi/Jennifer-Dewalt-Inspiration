@@ -1,0 +1,70 @@
+#page4 {
+    width: 100%;
+    height: 100vh;
+    /* background: black; */
+    background: url("https://images.unsplash.com/photo-1588854337236-6889d631faa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;                   
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    border: 5px solid rgba(124, 124, 124, 0.75);
+}
+
+.clock img {
+    height: 100%;
+    width: 100%;
+}
+
+.hand {
+    position: absolute;
+    margin: auto;
+    border-radius: 5px;
+    transform-origin: bottom;
+    bottom: 250px;
+    
+    background-color: rgba(124, 124, 124, 0.75);
+    backdrop-filter: blur(20px);
+}
+
+.hour {
+    height: 100px;
+    width: 9px;
+}
+
+.minute {
+    height: 120px;
+    width: 6px;
+}
+
+.second {
+    height: 130px;
+    width: 3px;
+}
+
+.middle-circle {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    position: absolute;
+
+    background-color: rgba(124, 124, 124);
+}
