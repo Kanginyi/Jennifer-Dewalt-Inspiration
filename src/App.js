@@ -8,13 +8,15 @@ import Page1 from "./Components/Page1";
 import Page2 from "./Components/Page2";
 
 import Page4 from "./Components/Page4";
+import Page5 from "./Components/Page5";
 
 // Import Images
 import homepage_pic from "./Images/home.png";
 import henri_pic from "./Images/henri.jpg";
-import flexbox_pic from "./Images/flexbox.jpg"
+import flexbox_pic from "./Images/flexbox.jpg";
 
-import clock_pic from "./Images/clock.jpg"
+import clock_pic from "./Images/clock.jpg";
+import regex_pic from "./Images/regex.PNG";
 
 function App() {
     // Array holding the information about the rendered react-window elements
@@ -24,6 +26,7 @@ function App() {
         {name: "Flexbox", image: flexbox_pic},
         {name: "CSS Grid", image: ""},
         {name: "Analog Clock", image: clock_pic},
+        {name: "Regex Cheatsheet", image: regex_pic},
     ];
 
     const Row = ({ index, style }) => (
@@ -47,6 +50,7 @@ function App() {
 	return (
 		<Router>
 			<Routes>
+                <Route path="/page5" element={<Page5/>}/>
                 <Route path="/page4" element={<Page4/>}/>
 
                 <Route path="/page2" element={<Page2/>}/>
@@ -61,7 +65,7 @@ function App() {
                             <List
                                 itemCount={100}
                                 itemSize={100}
-                                height={400}
+                                height={500}
                                 width={450}
                             >
                                 {Row}
