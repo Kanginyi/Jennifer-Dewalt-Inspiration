@@ -22,7 +22,7 @@ function App() {
         {name: "Homepage", image: homepage_pic},
         {name: "Henri", image: henri_pic},
         {name: "Flexbox", image: flexbox_pic},
-        {name: "CSS Grid", image: "asdf.com"},
+        {name: "CSS Grid", image: ""},
         {name: "Analog Clock", image: clock_pic},
     ];
 
