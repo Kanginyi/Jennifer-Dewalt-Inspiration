@@ -7,10 +7,14 @@ import "./App.css"
 import Page1 from "./Components/Page1";
 import Page2 from "./Components/Page2";
 
+import Page4 from "./Components/Page4";
+
 // Import Images
 import homepage_pic from "./Images/home.png";
 import henri_pic from "./Images/henri.jpg";
 import flexbox_pic from "./Images/flexbox.jpg"
+
+import clock_pic from "./Images/clock.jpg"
 
 function App() {
     // Array holding the information about the rendered react-window elements
@@ -18,6 +22,8 @@ function App() {
         {name: "Homepage", image: homepage_pic},
         {name: "Henri", image: henri_pic},
         {name: "Flexbox", image: flexbox_pic},
+        {name: "CSS Grid", image: "asdf.com"},
+        {name: "Analog Clock", image: clock_pic},
     ];
 
     const Row = ({ index, style }) => (
@@ -41,6 +47,8 @@ function App() {
 	return (
 		<Router>
 			<Routes>
+                <Route path="/page4" element={<Page4/>}/>
+
                 <Route path="/page2" element={<Page2/>}/>
 				<Route path="/page1" element={<Page1/>}/>
 				<Route path="/" element={
