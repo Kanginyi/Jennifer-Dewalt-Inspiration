@@ -38,26 +38,6 @@ function Page5() {
                             <span>\s \S</span>
                             Whitespace (Spaces, tabs, linebreaks), Opposite of Whitespace
                         </li>
-                        <li>
-                            <span>\b \B</span>
-                            Word Boundary, Opposite of Word Boundary
-                        </li>
-                        <li>
-                            <span>\b \B</span>
-                            Word Boundary, Opposite of Word Boundary
-                        </li>
-                        <li>
-                            <span>\t</span>
-                            Tab
-                        </li>
-                        <li>
-                            <span>\n</span>
-                            New line or Line break
-                        </li>
-                        <li>
-                            <span>\r</span>
-                            Carriage Return
-                        </li>
                     </ul>
                 </div>
 
@@ -151,7 +131,94 @@ function Page5() {
                     </ul>
                 </div> 
 
+                <div>
+                    <p>Escaped Characters</p>
+                    <ul>
+                        <li>
+                            <span>\. \* \\ </span>
+                            Escaped Characters: Make any character literal. 
+                            Most commonly used to escape special characters.
+                        </li>
+                        <li>
+                            <span>\t</span>
+                            Tab
+                        </li>
+                        <li>
+                            <span>\n</span>
+                            New line or Line break
+                        </li>
+                        <li>
+                            <span>\r</span>
+                            Carriage Return
+                        </li>
+                    </ul>
+                </div>
 
+                <div>
+                    <p>Anchors</p>
+                    <ul>
+                        <li>
+                            <span>\b \B</span>
+                            Word Boundary, Opposite of Word Boundary
+                        </li>
+                        <li>
+                            <span>\A</span>
+                            Start of string
+                        </li>
+                        <li>
+                            <span>^a</span>
+                            Match string that starts with a
+                        </li>
+                        <li>
+                            <span>\Z</span>
+                            End of string
+                        </li>
+                        <li>
+                            <span>z$</span>
+                            Match string that ends with z
+                        </li>
+                        <li>
+                            <span>^abc$</span>
+                            Match exactly abc
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Flags</p>
+                    <p>Things to append after the second forward slash of the regular expression. You can mix and match flags as needed.</p>
+                    <ul>
+                        <li>
+                            <span>g</span>
+                            <b>G</b>lobal: Match all instances, not only the first instance.
+                        </li>
+                        <li>
+                            <span>i</span>
+                            <b>I</b>gnore casing: Make the whole regular expression case insensitive.
+                        </li>
+                        <li>
+                            <span>m</span>
+                            <b>M</b>ultiline: Match things on multiple lines.
+                        </li>
+                        <li>
+                            <span>s</span>
+                            <b>S</b>ingleline: Also known as the Dot All flag, which lets the dot(.) match all possible characters. Treats the regular expression as a single line. 
+                        </li>
+                        <li>
+                            <span>u</span>
+                            <b>U</b>nicode: Lets the regular expression match Unicode escapes \u{`XXXXX`}
+                        </li>
+                        <li>
+                            <span>y</span>
+                            Stick<b>Y</b> searching: Make the regular expression start searching from the position noted in its <b>lastIndex</b> property.
+                            <br/>
+                            If the <b>lastIndex</b> property is not changed, the <b>y</b> flag would be useless since regular expressions start searching from the default index of 0.
+                            <br/>
+                            You can change the <b>lastIndex</b> property by doing:
+                            <br/><span style={{backgroundColor: "lightgray"}}>/RegEx/.lastIndex = 5;</span>
+                        </li>
+                    </ul>
+                </div> 
 
             </div>
 
