@@ -1,7 +1,7 @@
 #page5 {
     width: 100%;
-    height: 100vh;
-    background: green;
+    height: 100%;
+    background: rgb(158, 224, 158);
     
     display: flex;
     flex-direction: column;
@@ -9,4 +9,12 @@
     align-items: center;
 
     padding-top: 5rem;
+}
+
+#page5 p {
+    font-size: 20px;
+}
+
+#page5 li {
+    font-size: 16px;
 }
