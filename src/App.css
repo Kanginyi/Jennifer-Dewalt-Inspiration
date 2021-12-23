@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
+    height: 75vh;
 }
 
 /* Think about this and make it better; think about spacing between the react-window list and the scrollbar itself */
@@ -56,7 +56,7 @@
     height: 50px;
     width: 50px;
     position: absolute;
-    right: 325px;
+    right: 335px;
 }
 
 #homepage-button {
