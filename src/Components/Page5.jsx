@@ -215,7 +215,7 @@ function Page5() {
                             If the <b>lastIndex</b> property is not changed, the <b>y</b> flag would be useless since regular expressions start searching from the default index of 0.
                             <br/>
                             You can change the <b>lastIndex</b> property by doing:
-                            <br/><span style={{backgroundColor: "lightgray"}}>/RegEx/.lastIndex = 5;</span>
+                            <br/><br/><span className="code-block">/RegEx/.lastIndex = 5;</span>
                         </li>
                     </ul>
                 </div> 
