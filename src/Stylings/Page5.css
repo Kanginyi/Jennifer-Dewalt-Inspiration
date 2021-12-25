@@ -18,3 +18,15 @@
 #page5 li {
     font-size: 16px;
 }
+
+#regex-divs-container {
+    display: flex;
+}
+
+#regex-divs-container div {
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
