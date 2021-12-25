@@ -18,7 +18,7 @@ function Page5() {
             <p><b>/RegEx/flags</b></p>
             <br/><br/>
 
-            <div>
+            <div id="regex-divs-container">
                 <div>
                     <p>Character Classes</p>
                     <ul>
@@ -87,15 +87,15 @@ function Page5() {
                             One or more occurrences of c
                         </li>
                         <li>
-                            <span>x{`n`}</span>
+                            <span>x{`{n}`}</span>
                             Exactly n occurrences of x
                         </li>
                         <li>
-                            <span>y{`n, `}</span>
+                            <span>y{`{n, }`}</span>
                             n or more occurrences of y
                         </li>
                         <li>
-                            <span>z{`n, o`}</span>
+                            <span>z{`{n, o}`}</span>
                             Between n or o occurrences of z
                         </li>
                     </ul>
