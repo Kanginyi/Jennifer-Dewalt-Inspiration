@@ -21,14 +21,47 @@
 
 #regex-divs-container {
     display: flex;
+    overflow-x: scroll;
+    padding: 3rem;
 }
 
-#regex-divs-container div {
-    border: black 1px solid;
+.regex-divs {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 25px;
+    position: relative;
+
+    height: 450px;
+    width: 300px;
+    padding: 1.5rem;
+
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: -.5rem -0 2rem black;
+
+    backdrop-filter: blur(6px);
+    transition: 0.2s;
+}
+
+.regex-divs:hover {
+    transform: translateY(-1.5rem);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.regex-divs:hover~.regex-divs {
+    transform: translateX(130px);
+}
+
+.regex-divs:not(:first-child) {
+    margin-left: -130px;
+}
+
+.regex-cards-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 #regex-divs-container div span {
