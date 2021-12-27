@@ -24,19 +24,19 @@ function Page5() {
                     <ul>
                         <li>
                             <span>.</span>
-                            Any character except new line
+                            &nbsp;Any character except new line
                         </li>
                         <li>
                             <span>\w \W</span>
-                            Word (Alphanumeric characters & underscore), Opposite of Word
+                            &nbsp;Word (Alphanumeric characters & underscore), Opposite of Word
                         </li>
                         <li>
                             <span>\d \D</span>
-                            Digit (0~9), Opposite of Digit
+                            &nbsp;Digit (0~9), Opposite of Digit
                         </li>
                         <li>
                             <span>\s \S</span>
-                            Whitespace (Spaces, tabs, linebreaks), Opposite of Whitespace
+                            &nbsp;Whitespace (Spaces, tabs, linebreaks), Opposite of Whitespace
                         </li>
                     </ul>
                 </div>
@@ -46,23 +46,23 @@ function Page5() {
                     <ul>
                         <li>
                             <span>[abc]</span>
-                            Any single character of a, b, or c
+                            &nbsp;Any single character of a, b, or c
                         </li>
                         <li>
                             <span>[^xyz]</span>
-                            Any single character EXCEPT x, y, or z
+                            &nbsp;Any single character EXCEPT x, y, or z
                         </li>
                         <li>
                             <span>[a-z]</span>
-                            Any single character in the range of a~z
+                            &nbsp;Any single character in the range of a~z
                         </li>
                         <li>
                             <span>[^0~9]</span>
-                            Any single character EXCEPT 0~9
+                            &nbsp;Any single character EXCEPT 0~9
                         </li>
                         <li>
                             <span>[a-f0-5]</span>
-                            Any single character in the range of a~f or 0~5
+                            &nbsp;Any single character in the range of a~f or 0~5
                         </li>
                     </ul>
                 </div>
@@ -72,31 +72,31 @@ function Page5() {
                     <ul>
                         <li>
                             <span>a|z</span>
-                            Alternate: Match either a or z
+                            &nbsp;Alternate: Match either a or z
                         </li>
                         <li>
                             <span>a?</span>
-                            Zero or One occurrences of a
+                            &nbsp;Zero or One occurrences of a
                         </li>
                         <li>
                             <span>b*</span>
-                            Zero or more occurrences of b
+                            &nbsp;Zero or more occurrences of b
                         </li>
                         <li>
                             <span>c+</span>
-                            One or more occurrences of c
+                            &nbsp;One or more occurrences of c
                         </li>
                         <li>
                             <span>x{`{n}`}</span>
-                            Exactly n occurrences of x
+                            &nbsp;Exactly n occurrences of x
                         </li>
                         <li>
                             <span>y{`{n, }`}</span>
-                            n or more occurrences of y
+                            &nbsp;n or more occurrences of y
                         </li>
                         <li>
                             <span>z{`{n, o}`}</span>
-                            Between n or o occurrences of z
+                            &nbsp;Between n or o occurrences of z
                         </li>
                     </ul>
                 </div>
@@ -106,27 +106,27 @@ function Page5() {
                     <ul>
                         <li>
                             <span>(abc)</span>
-                            Capture Group: Capture and match what's inside of the parentheses
+                            &nbsp;Capture Group: Capture and match what's inside of the parentheses
                         </li>
                         <li>
                             <span>(?:xyz)</span>
-                            Group what's inside of the parentheses without creating a Capture Group
+                            &nbsp;Group what's inside of the parentheses without creating a Capture Group
                         </li>
                         <li>
                             <span>(?=abc)</span>
-                            Positive Lookahead: Match something followed by abc
+                            &nbsp;Positive Lookahead: Match something followed by abc
                         </li>
                         <li>
                             <span>(?!xyz)</span>
-                            Negative Lookahead: Match something not followed by xyz
+                            &nbsp;Negative Lookahead: Match something not followed by xyz
                         </li>
                         <li>
                             <span>(?{`<=`}abc)</span>
-                            Positive Lookbehind: Match something preceded by abc
+                            &nbsp;Positive Lookbehind: Match something preceded by abc
                         </li>
                         <li>
                             <span>(?{`<!`}xyz)</span>
-                            Negative Lookbehind: Match something not preceded by xyz
+                            &nbsp;Negative Lookbehind: Match something not preceded by xyz
                         </li>
                     </ul>
                 </div> 
@@ -136,20 +136,20 @@ function Page5() {
                     <ul>
                         <li>
                             <span>\. \* \\ </span>
-                            Escaped Characters: Make any character literal. 
+                            &nbsp;Escaped Characters: Make any character literal. 
                             Most commonly used to escape special characters.
                         </li>
                         <li>
                             <span>\t</span>
-                            Tab
+                            &nbsp;Tab
                         </li>
                         <li>
                             <span>\n</span>
-                            New line or Line break
+                            &nbsp;New line or Line break
                         </li>
                         <li>
                             <span>\r</span>
-                            Carriage Return
+                            &nbsp;Carriage Return
                         </li>
                     </ul>
                 </div>
@@ -159,27 +159,27 @@ function Page5() {
                     <ul>
                         <li>
                             <span>\b \B</span>
-                            Word Boundary, Opposite of Word Boundary
+                            &nbsp;Word Boundary, Opposite of Word Boundary
                         </li>
                         <li>
                             <span>\A</span>
-                            Start of string
+                            &nbsp;Start of string
                         </li>
                         <li>
                             <span>^a</span>
-                            Match string that starts with a
+                            &nbsp;Match string that starts with a
                         </li>
                         <li>
                             <span>\Z</span>
-                            End of string
+                            &nbsp;End of string
                         </li>
                         <li>
                             <span>z$</span>
-                            Match string that ends with z
+                            &nbsp;Match string that ends with z
                         </li>
                         <li>
                             <span>^abc$</span>
-                            Match exactly abc
+                            &nbsp;Match exactly abc
                         </li>
                     </ul>
                 </div>
@@ -190,27 +190,27 @@ function Page5() {
                     <ul>
                         <li>
                             <span>g</span>
-                            <b>G</b>lobal: Match all instances, not only the first instance.
+                            &nbsp;<b>G</b>lobal: Match all instances, not only the first instance.
                         </li>
                         <li>
                             <span>i</span>
-                            <b>I</b>gnore casing: Make the whole regular expression case insensitive.
+                            &nbsp;<b>I</b>gnore casing: Make the whole regular expression case insensitive.
                         </li>
                         <li>
                             <span>m</span>
-                            <b>M</b>ultiline: Match things on multiple lines.
+                            &nbsp;<b>M</b>ultiline: Match things on multiple lines.
                         </li>
                         <li>
                             <span>s</span>
-                            <b>S</b>ingleline: Also known as the Dot All flag, which lets the dot(.) match all possible characters. Treats the regular expression as a single line. 
+                            &nbsp;<b>S</b>ingleline: Also known as the Dot All flag, which lets the dot(.) match all possible characters. Treats the regular expression as a single line. 
                         </li>
                         <li>
                             <span>u</span>
-                            <b>U</b>nicode: Lets the regular expression match Unicode escapes \u{`XXXXX`}
+                            &nbsp;<b>U</b>nicode: Lets the regular expression match Unicode escapes \u{`XXXXX`}
                         </li>
                         <li>
                             <span>y</span>
-                            Stick<b>Y</b> searching: Make the regular expression start searching from the position noted in its <b>lastIndex</b> property.
+                            &nbsp;Stick<b>Y</b> searching: Make the regular expression start searching from the position noted in its <b>lastIndex</b> property.
                             <br/>
                             If the <b>lastIndex</b> property is not changed, the <b>y</b> flag would be useless since regular expressions start searching from the default index of 0.
                             <br/>
