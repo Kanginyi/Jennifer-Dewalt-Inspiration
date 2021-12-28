@@ -1,5 +1,65 @@
 /* Montserrat Regular 400 Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Source Code Pro Regular 400 Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/* Incosolata 500 Font */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+#homepage {
+    padding-top: 3rem;
+    display: grid;
+    place-content: center;
+}
+
+#homepage-typing {
+    font-size: 4rem;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+}
+
+#homepage-typing::before, #homepage-typing::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+#homepage-typing::before {
+    background: white;
+    animation: typing 3s steps(12) 1.5s forwards;
+}
+
+#homepage-typing::after {
+    width: 0.115em;
+    background: black;
+    animation: typing 3s steps(12) 1.5s forwards, blink 775ms steps(12) infinite;
+}
+
+@keyframes typing {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+#homepage-underline {
+    border-top: .375em solid black;
+    margin-bottom: 1em;
+
+    transform: translateX(-200%);
+    animation: enterleft 2s ease-in 3.5s forwards;
+}
+
+@keyframes enterleft {
+    to {
+        transform: translateX(0);
+    }
+}
 
 #homepage-list {
     display: flex;
@@ -7,6 +67,15 @@
     align-items: center;
     flex-direction: column;
     height: 75vh;
+
+    opacity: 0;    
+    animation: fadein 1s ease-in 6s forwards;
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
 }
 
 /* Think about this and make it better; think about spacing between the react-window list and the scrollbar itself */
