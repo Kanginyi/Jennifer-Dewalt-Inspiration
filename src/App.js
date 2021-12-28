@@ -57,13 +57,16 @@ function App() {
 				<Route path="/page1" element={<Page1/>}/>
 				<Route path="/" element={
 					<div id="homepage">
-						<h1>Hello World!</h1>
+                        <h1 id="homepage-typing">Hello World!</h1>
+                        <div id="homepage-underline"></div>
+						
+                        
 						<p>My name is Eric and I'm trying to learn more about web development. Welcome to a website inspired by Jennifer Dewalt's <a href="https://jenniferdewalt.com/" target="_blank">180 Websites in 180 Days project</a>.</p>
-                        <br/><br/>
+                        <br/>
 
-                        <div id="homepage-list">
+                        <main id="homepage-list">
                             <List
-                                itemCount={100}
+                                itemCount={6}
                                 itemSize={100}
                                 height={500}
                                 width={450}
@@ -77,7 +80,7 @@ function App() {
                             >
                                 Random Page
                             </a>
-                        </div>
+                        </main>
                                                 
 					</div>
 				}/>
