@@ -29,3 +29,7 @@ code {
     padding: .75rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+:root {
+    --homepage-blue: cornflowerblue;
+}
