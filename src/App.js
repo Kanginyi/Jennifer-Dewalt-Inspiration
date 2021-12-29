@@ -62,7 +62,7 @@ function App() {
                         <h1 id="homepage-typing">Hello World!</h1>
                         <div id="homepage-underline"></div>
 						
-						<p id="homepage-description">My name is Eric Yi and I'm trying to learn more about web development.
+						<p id="homepage-description">My name is <span>Eric Yi</span> and I'm trying to learn more about web development.<br/>
                         Welcome to a collection of websites inspired by
                         Jennifer Dewalt's <a href="https://jenniferdewalt.com/" target="_blank">180 Websites in 180 Days project</a>.</p>
 
