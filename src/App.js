@@ -66,15 +66,14 @@ function App() {
 
                         <main id="homepage-list">
                             <div id="browser-bar">
-                                <div id="waterwolf">Godzilla Waterwolf</div>
-                                
+                                <div>Bing Bong</div>
+
                                 <div id="browser-circle-container">
                                     <div className="browser-circle green"></div>
                                     <div className="browser-circle yellow"></div>
                                     <div className="browser-circle red"></div>
                                 </div>
                             </div>
-
                             <br/><br/>
 
                             <List
