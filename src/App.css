@@ -71,7 +71,6 @@
 }
 
 #homepage-description {
-    /* width: 40%; */
     font-size: 1.1em;
 
     opacity: 0;
@@ -82,13 +81,27 @@
 @keyframes enterright {
     to {
         opacity: 1;
-        transform: translateX(-24%);
+        transform: translateX(-22%);
     }
 }
 
 #homepage-description span {
     color: cornflowerblue;
     font-weight: 750;
+}
+
+#homepage-description a {
+    text-decoration: none;
+    font-weight: 750;
+    color: cornflowerblue;
+}
+
+#homepage-description a:hover {
+    color: pink;
+}
+
+#homepage-description a:active {
+    font-size: .99em;
 }
 
 #homepage-list {
