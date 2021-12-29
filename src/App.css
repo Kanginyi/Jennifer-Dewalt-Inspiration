@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 #homepage {
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,11 +17,11 @@
 
 #homepage-typing {
     font-size: 4rem;
-    position: relative;
     font-family: "Source Code Pro", monospace;
     width: max-content;
-    
-    display: flex;
+
+    position: relative;
+    left: 21.2rem;
 }
 
 #homepage-typing::before, #homepage-typing::after {
@@ -56,7 +56,7 @@
 #homepage-underline {
     border-top: .375em solid cornflowerblue;
     margin-bottom: 1em;
-    width: 70%;
+    width: 24.5%;
 
     opacity: 0;
     transform: translateX(-200%);
@@ -66,14 +66,13 @@
 @keyframes enterleft {
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(72.6%);
     }
 }
 
 #homepage-description {
     /* width: 40%; */
     font-size: 1.1em;
-    text-align: center;
 
     opacity: 0;
     transform: translateX(200%);
@@ -83,8 +82,13 @@
 @keyframes enterright {
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(-24%);
     }
+}
+
+#homepage-description span {
+    color: cornflowerblue;
+    font-weight: 750;
 }
 
 #homepage-list {
