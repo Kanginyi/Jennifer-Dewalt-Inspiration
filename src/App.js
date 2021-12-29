@@ -38,7 +38,7 @@ function App() {
             >
                 <img
                 src={pageNames[index]?.image}
-                alt={`${pageNames[index]?.name} page image`}
+                alt={`${pageNames[index]?.name} image`}
                 className="homepage-link-image"
                 />
 
@@ -61,15 +61,25 @@ function App() {
                         <div id="homepage-underline"></div>
 						
                         
-						<p>My name is Eric and I'm trying to learn more about web development. Welcome to a website inspired by Jennifer Dewalt's <a href="https://jenniferdewalt.com/" target="_blank">180 Websites in 180 Days project</a>.</p>
-                        <br/>
+						<p id="homepage-description">My name is Eric Yi and I'm trying to learn more about web development.
+                        Welcome to a collection of websites inspired by
+                        Jennifer Dewalt's <a href="https://jenniferdewalt.com/" target="_blank">180 Websites in 180 Days project</a>.</p>
 
                         <main id="homepage-list">
+                            <div id="browser-bar">
+                                <div id="waterwolf">Godzilla Waterwolf</div>
+                                
+                                <div id="browser-circle-container">
+                                    <div className="browser-circle green"></div>
+                                    <div className="browser-circle yellow"></div>
+                                    <div className="browser-circle red">X</div>
+                                </div>
+                            </div>
                             <List
-                                itemCount={6}
+                                itemCount={100}
                                 itemSize={100}
                                 height={500}
-                                width={450}
+                                width={475}
                             >
                                 {Row}
                             </List>
