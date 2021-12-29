@@ -112,6 +112,7 @@
 }
 
 #browser-bar {
+    padding-left: 10px;
     border-bottom: .2em solid black;
     width: 100%;
 
@@ -130,11 +131,10 @@
 }
 
 .browser-circle {
-    border: 1px solid black;
     border-radius: 50%;
-
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    margin: 1px;
 
     display: flex;
     justify-content: center;
