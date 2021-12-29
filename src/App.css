@@ -100,6 +100,8 @@
 
     opacity: 0;    
     animation: fadein 1s ease-in 5s forwards;
+
+    position: relative;
 }
 
 @keyframes fadein {
@@ -116,10 +118,12 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    position: absolute;
 }
 
 #waterwolf {
-    position: relative;
+    position: absolute;
     left: .3em;
     bottom: .2em;
     color: cornflowerblue;
@@ -131,7 +135,7 @@
     display: flex;
     width: 10%;
 
-    position: relative;
+    position: relatives;
 }
 
 .browser-circle {
@@ -140,7 +144,7 @@
     width: 20px;
     height: 20px;
 
-    position: relative;
+    position: absolute;
     margin: auto;
 
     display: flex;
