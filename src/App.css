@@ -54,7 +54,7 @@
 }
 
 #homepage-underline {
-    border-top: .375em solid cornflowerblue;
+    border-top: .375em solid var(--homepage-blue);
     margin-bottom: 1em;
     width: 24.5%;
 
@@ -86,14 +86,14 @@
 }
 
 #homepage-description span {
-    color: cornflowerblue;
+    color: var(--homepage-blue);
     font-weight: 750;
 }
 
 #homepage-description a {
     text-decoration: none;
     font-weight: 750;
-    color: cornflowerblue;
+    color: var(--homepage-blue);
 }
 
 #homepage-description a:hover {
