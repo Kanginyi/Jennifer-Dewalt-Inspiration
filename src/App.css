@@ -140,6 +140,10 @@
     top: .1rem;
 }
 
+#browser-bar > div {
+    font-weight: 750;
+}
+
 #browser-circle-container {
      display: flex;
      justify-content: space-evenly;
