@@ -18,6 +18,8 @@ import flexbox_pic from "./Images/flexbox.jpg";
 import clock_pic from "./Images/clock.jpg";
 import regex_pic from "./Images/regex.PNG";
 
+import {BsEmojiAngry, BsEmojiNeutral, BsEmojiWink} from "react-icons/bs"
+
 function App() {
     // Array holding the information about the rendered react-window elements
     const pageNames = [
@@ -66,12 +68,12 @@ function App() {
 
                         <main id="homepage-list">
                             <div id="browser-bar">
-                                <div>Bing Bong</div>
+                                <div>Chromarifox</div>
 
                                 <div id="browser-circle-container">
-                                    <div className="browser-circle green">+</div>
-                                    <div className="browser-circle yellow">-</div>
-                                    <div className="browser-circle red">X</div>
+                                    <BsEmojiWink className="browser-circle green" title="ur cute"/>
+                                    <BsEmojiNeutral className="browser-circle yellow"/>
+                                    <BsEmojiAngry className="browser-circle red"/>
                                 </div>
                             </div>
                             <br/><br/>
