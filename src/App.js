@@ -69,9 +69,9 @@ function App() {
                                 <div>Bing Bong</div>
 
                                 <div id="browser-circle-container">
-                                    <div className="browser-circle green"></div>
-                                    <div className="browser-circle yellow"></div>
-                                    <div className="browser-circle red"></div>
+                                    <div className="browser-circle green">+</div>
+                                    <div className="browser-circle yellow">-</div>
+                                    <div className="browser-circle red">X</div>
                                 </div>
                             </div>
                             <br/><br/>
