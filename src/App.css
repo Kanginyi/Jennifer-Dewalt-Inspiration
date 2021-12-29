@@ -38,7 +38,7 @@
 #homepage-typing::after {
     width: 0.115em;
     background: black;
-    animation: typing 3s steps(12) 1s forwards, blink 775ms steps(12) infinite;
+    animation: typing 3s steps(12) 1s forwards, blink .75s infinite alternate;
 }
 
 @keyframes typing {
@@ -95,13 +95,14 @@
     height: 75vh;
 
     margin-top: 1em;
-    width: 70%;
+    width: 60%;
     border: .2em solid black;
 
-    opacity: 0;    
+    opacity: 0;
     animation: fadein 1s ease-in 5s forwards;
 
-    position: relative;
+    position: absolute;
+    top: 11em;
 }
 
 @keyframes fadein {
@@ -111,57 +112,29 @@
 }
 
 #browser-bar {
-    width: 100%;
-    margin-top: -3em;
     border-bottom: .2em solid black;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
 
     position: absolute;
-}
-
-#waterwolf {
-    position: absolute;
-    left: .3em;
-    bottom: .2em;
-    color: cornflowerblue;
-    font-size: 18px;
-    font-weight: 500;
+    top: .1rem;
 }
 
 #browser-circle-container {
-    display: flex;
-    width: 10%;
+     display: flex;
+     justify-content: space-evenly;
 
-    position: relatives;
+     width: 15%;
 }
 
 .browser-circle {
-    border: .15em solid black;
+    border: 1px solid black;
     border-radius: 50%;
+
     width: 20px;
     height: 20px;
-
-    position: absolute;
-    margin: auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.green {
-    background-color: green;
-}
-
-.yellow {
-    background-color: rgb(235, 235, 0);
-}
-
-.red {
-    background-color: red;
 }
 
 /* Think about this and make it better; think about spacing between the react-window list and the scrollbar itself */
