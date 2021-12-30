@@ -130,6 +130,7 @@
 
 #browser-bar {
     padding-left: 10px;
+    padding-bottom: .4rem;
     border-bottom: .2em solid black;
     width: 100.1%;
 
@@ -144,39 +145,31 @@
     font-weight: 750;
 }
 
-#browser-circle-container {
-    display: flex;
-    justify-content: space-around;
-
-
-    width: 80%;
-}
-
 .browser-circle {
     border-radius: 50%;
     width: 25px;
     height: 25px;
 
-    /* height: 50%;
-    width: 50%; */
-
-    /* margin: 1px;
-    margin-bottom: 2px; */
-
     border: .1em solid black;
     background-color: black;
+
+    position: absolute;
+    top: .025rem;
 }
 
 .green {
     fill: rgb(0, 170, 0);
+    right: 100px;
 }
 
 .yellow {
     fill: rgb(228, 228, 23);
+    right: 55px;
 }
 
 .red {
     fill: red;
+    right: 10px;
 }
 
 #browser-menu {
