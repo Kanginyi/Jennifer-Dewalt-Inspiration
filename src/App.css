@@ -200,12 +200,12 @@
 }
 
 #homepage-list div::-webkit-scrollbar-thumb {
-    background: rgb(255, 58, 91);
+    background: var(--homepage-blue);
     border-radius: 10px;
 }
 
 #homepage-list div::-webkit-scrollbar-track {
-    background: pink;
+    background: rgb(255, 210, 218);
     border-radius: 10px;
 }
 
@@ -286,7 +286,7 @@
 
 #homepage-button:hover:before {
     width: 107.5%;
-    background: #ffab9d;
+    background: rgb(255, 171, 157);
 }
 
 #homepage-button:hover svg {
