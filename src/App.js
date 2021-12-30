@@ -18,7 +18,7 @@ import flexbox_pic from "./Images/flexbox.jpg";
 import clock_pic from "./Images/clock.jpg";
 import regex_pic from "./Images/regex.PNG";
 
-import {BsEmojiAngry, BsEmojiNeutral, BsEmojiWink} from "react-icons/bs"
+import {BsEmojiAngryFill, BsEmojiNeutralFill, BsEmojiWinkFill} from "react-icons/bs"
 import {AiOutlineMenuUnfold} from "react-icons/ai"
 
 function App() {
@@ -72,9 +72,9 @@ function App() {
                                 <div>Chromarifox</div>
 
                                 <div id="browser-circle-container">
-                                    <BsEmojiWink className="browser-circle green" title="ur cute"/>
-                                    <BsEmojiNeutral className="browser-circle yellow"/>
-                                    <BsEmojiAngry className="browser-circle red"/>
+                                    <BsEmojiWinkFill className="browser-circle green" title="ur cute"/>
+                                    <BsEmojiNeutralFill className="browser-circle yellow"/>
+                                    <BsEmojiAngryFill className="browser-circle red"/>
                                 </div>
                             </div>
                             <br/><br/>
