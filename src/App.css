@@ -38,7 +38,7 @@
 #homepage-typing::after {
     width: 0.115em;
     background: black;
-    animation: typing 3s steps(12) 1s forwards, blink .75s infinite alternate;
+    animation: typing 3s steps(12) 1s forwards, blink .7s infinite alternate;
 }
 
 @keyframes typing {
