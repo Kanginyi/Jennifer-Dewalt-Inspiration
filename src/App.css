@@ -163,15 +163,15 @@
 }
 
 .green {
-    background: rgb(0, 170, 0);
+    color: rgb(0, 170, 0);
 }
 
 .yellow {
-    background: rgb(228, 228, 23);
+    color: rgb(228, 228, 23);
 }
 
 .red {
-    background: red;
+    color: red;
 }
 
 #browser-menu {
@@ -257,8 +257,6 @@
     content: "";
     position: absolute;
     top: -5px;
-    /* left: 0; */
-    /* display: block; */
     border-radius: 28px;
     background: rgba(255, 171, 157, 0.5);
     width: 40px;
