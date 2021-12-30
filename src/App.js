@@ -19,6 +19,7 @@ import clock_pic from "./Images/clock.jpg";
 import regex_pic from "./Images/regex.PNG";
 
 import {BsEmojiAngry, BsEmojiNeutral, BsEmojiWink} from "react-icons/bs"
+import {AiOutlineMenuUnfold} from "react-icons/ai"
 
 function App() {
     // Array holding the information about the rendered react-window elements
@@ -78,6 +79,10 @@ function App() {
                             </div>
                             <br/><br/>
 
+                            <div id="browser-menu">
+                                <AiOutlineMenuUnfold id="browser-menu-icon"/>
+                            </div>
+
                             <List
                                 itemCount={100}
                                 itemSize={100}
@@ -91,7 +96,11 @@ function App() {
                                 id="homepage-button"
                                 href={`/page${Math.floor(Math.random() * (pageNames.length - 1) + 1)}`}
                             >
-                                Random Page
+                                <span>RANDOM PAGE</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
                             </a>
                         </main>
                                                 
