@@ -131,7 +131,7 @@
 #browser-bar {
     padding-left: 10px;
     border-bottom: .2em solid black;
-    width: 100%;
+    width: 100.1%;
 
     display: flex;
     justify-content: space-between;
@@ -145,38 +145,43 @@
 }
 
 #browser-circle-container {
-     display: flex;
-     justify-content: space-evenly;
+    display: flex;
+    justify-content: space-around;
 
-     width: 15%;
+
+    width: 80%;
 }
 
 .browser-circle {
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    margin: 1px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* height: 50%;
+    width: 50%; */
+
+    /* margin: 1px;
+    margin-bottom: 2px; */
+
+    border: .1em solid black;
+    background-color: black;
 }
 
 .green {
-    color: rgb(0, 170, 0);
+    fill: rgb(0, 170, 0);
 }
 
 .yellow {
-    color: rgb(228, 228, 23);
+    fill: rgb(228, 228, 23);
 }
 
 .red {
-    color: red;
+    fill: red;
 }
 
 #browser-menu {
     position: absolute;
-    top: 29px;
+    top: 30px;
     left: -3.2px;
     border: .2em solid black;
     border-top: transparent;
