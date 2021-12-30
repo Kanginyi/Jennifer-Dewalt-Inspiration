@@ -71,11 +71,9 @@ function App() {
                             <div id="browser-bar">
                                 <div>Chromarifox</div>
 
-                                <div id="browser-circle-container">
-                                    <BsEmojiWinkFill className="browser-circle green" title="ur cute"/>
-                                    <BsEmojiNeutralFill className="browser-circle yellow"/>
-                                    <BsEmojiAngryFill className="browser-circle red"/>
-                                </div>
+                                <BsEmojiWinkFill className="browser-circle green" title="ur cute"/>
+                                <BsEmojiNeutralFill className="browser-circle yellow"/>
+                                <BsEmojiAngryFill className="browser-circle red"/>
                             </div>
                             <br/><br/>
 
