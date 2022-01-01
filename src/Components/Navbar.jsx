@@ -3,9 +3,30 @@ import "../Stylings/Navbar.css";
 
 function Navbar() {
     return (
-        <div id="asdf">
-            biansd
-        </div>
+        <nav id="asdf">
+
+            <div>
+                Homepage
+            </div>
+
+            <div>
+                Previous Page
+            </div>
+
+            <select>
+                <option>Pick asdasd</option>
+                <option>asdfs</option>
+            </select>
+
+            <div>
+                Random Page
+            </div>
+
+            <div>
+                Next Page
+            </div>
+
+        </nav>
     );
 }
 
