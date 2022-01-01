@@ -60,7 +60,9 @@ function App() {
 				<Route path="/page1" element={<Page1/>}/>
 				<Route path="/" element={
 					<div id="homepage">
-                        <h1 id="homepage-typing">Hello World!</h1>
+                        <div>
+                            <h1 id="homepage-typing">Hello World!</h1>
+                        </div>
                         <div id="homepage-underline"></div>
 						
 						<p id="homepage-description">My name is <span>Eric Yi</span> and I'm trying to learn more about web development.<br/>
@@ -72,8 +74,8 @@ function App() {
                                 <div>Chromarifox</div>
 
                                 <BsEmojiWinkFill className="browser-circle green" title="ur cute"/>
-                                <BsEmojiNeutralFill className="browser-circle yellow"/>
-                                <BsEmojiAngryFill className="browser-circle red"/>
+                                <BsEmojiNeutralFill className="browser-circle yellow" title="i'm not"/>
+                                <BsEmojiAngryFill className="browser-circle red" title="but that's alright"/>
                             </div>
                             <br/><br/>
 
