@@ -20,8 +20,8 @@ code {
 }
 
 ::selection {
-    background-color: black;
-    color: white;
+    background-color: var(--homepage-blue);
+    color: black;
 }
 
 .code-block {

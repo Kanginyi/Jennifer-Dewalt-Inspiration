@@ -15,10 +15,20 @@
     overflow-x: hidden;
 }
 
+/*     border-top: .375em solid var(--homepage-blue);
+    margin-bottom: 1em;
+    position: absolute;
+    top: 7rem;
+    width: 24.53%; */
+
 #homepage-typing {
     font-size: 4rem;
     font-family: "Source Code Pro", monospace;
     width: max-content;
+
+    /* position: absolute;
+    top: 2rem;
+    left: 66.8rem; */
 
     position: relative;
     left: 21.2rem;
@@ -56,7 +66,9 @@
 #homepage-underline {
     border-top: .375em solid var(--homepage-blue);
     margin-bottom: 1em;
-    width: 24.5%;
+    /* position: absolute;
+    top: 7rem; */
+    width: 24.53%;
 
     opacity: 0;
     transform: translateX(-200%);
